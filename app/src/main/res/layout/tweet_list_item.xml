@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cvcontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_margin="8dp"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvshare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_3_24" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="AbinsinguzaDal2" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinsinguza Dallen"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/tvHandle" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News! Uganda celebrates it Heros day...let's celebrate together"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <ImageView
+            android:id="@+id/ivLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/ivRetweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/love" />
+
+        <ImageView
+            android:id="@+id/ivReplies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/messi" />
+
+        <ImageView
+            android:id="@+id/ivRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/ivReplies"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/retweet" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="35"
+            app:layout_constraintStart_toEndOf="@+id/ivShare"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet" />
+
+        <TextView
+            android:id="@+id/tvlikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="48"
+            app:layout_constraintStart_toEndOf="@+id/ivLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet" />
+
+        <TextView
+            android:id="@+id/tvRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="57"
+            app:layout_constraintStart_toEndOf="@+id/ivRetweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet" />
+
+        <TextView
+            android:id="@+id/tvReplies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="499"
+            app:layout_constraintStart_toEndOf="@+id/ivReplies"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
